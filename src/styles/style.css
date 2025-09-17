@@ -37,9 +37,7 @@ section {
 header {
   position: relative;
   overflow: hidden;
-}
-.about-me {
-  --shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.3);
+  --shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.4);
 }
 .about-me-background-overlay {
   background-color: skyblue;
@@ -50,6 +48,7 @@ header {
   width: 110%;
   transform: rotate(-10deg) translate(-50%, -50%);
   z-index: -1;
+  box-shadow: var(--shadow);
 }
 .image-name-container {
   position: relative;
@@ -80,12 +79,12 @@ header {
   justify-content: space-around;
   background-color: white;
   box-shadow: var(--shadow);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .about-me-text {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 .about-me-heading {
   font-size: 2.5rem;
