@@ -142,6 +142,7 @@ header {
 }
 
 main {
+  min-height: 100vh;
   height: fit-content;
 }
 .my-work {
