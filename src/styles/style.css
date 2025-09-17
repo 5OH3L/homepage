@@ -123,8 +123,97 @@ header {
 .link-button:hover > img {
   filter: invert(1);
 }
+.link-button > img[alt="Black Code Icon"],
 .link-button > img[alt="Code Icon"] {
   padding: 0.4rem;
   border-radius: 0.5rem;
   background-color: black;
+}
+.link-button > img[alt="External Link"] {
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+.link-button > img[alt="Black Code Icon"] {
+  background-color: transparent;
+}
+.link-button:hover > img[alt="Black Code Icon"] {
+  background-color: white;
+}
+
+main {
+  height: fit-content;
+}
+.my-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.my-work-heading,
+.my-work-projects {
+  width: 100%;
+}
+.my-work-heading {
+  font-size: 2rem;
+  flex: 1;
+}
+.my-work-projects {
+  --shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+  flex: 10;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1rem 2rem;
+  justify-items: center;
+  align-items: center;
+}
+.my-work-project {
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.project-screenshot {
+  width: 100%;
+  object-fit: contain;
+  padding: 1rem;
+}
+.my-work-project-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem 0.8rem;
+  flex: 1;
+}
+.project-name-links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0.4rem;
+}
+.project-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.project-link {
+  height: 2rem;
+}
+.project-description {
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.project-description > :first-child {
+  margin-bottom: 0.5rem;
+}
+.project-description > ul {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
